@@ -76,7 +76,7 @@ function YourComponent() {
               style={{ width: "20%" }}
             >
               <h2>
-                <strong>Name</strong>
+                <strong> Customer Name</strong>
               </h2>
             </div>
             <div
