@@ -1,0 +1,20 @@
+/* HireCompany.css */
+
+.company-container {
+  /* Add any additional styling for the container */
+}
+
+.company-logos {
+  display: flex;
+  flex-wrap: wrap; /* Allow logos to wrap to the next line if necessary */
+  justify-content: space-between; /* Distribute logos evenly */
+  align-items: center; /* Center logos vertically */
+}
+
+.company-slide {
+  margin: 10px; /* Adjust margin spacing between logos as needed */
+}
+
+.company-slide img {
+  max-width: 100%; /* Ensure images are responsive */
+}

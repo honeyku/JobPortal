@@ -1,0 +1,68 @@
+/* Initial styles for the header */
+.header {
+  background-color: #ffffff;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-1 {
+  width: 100%;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+  margin-left: -20px;
+}
+
+/* Styles for the menu icon */
+.menu-icon {
+  display: none; /* Hide the menu icon by default on larger screens */
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+/* Styles for the navigation menu */
+.navbar {
+  display: flex;
+  width: 100%; /* Make the navigation bar span the full width */
+  justify-content: flex-end; /* Align menu items to the right */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Styles for the responsive menu on small screens */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Show the menu icon on small screens */
+  }
+
+  .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 70px; /* Adjust the top position as needed */
+    left: 0;
+    background-color: #ffffff;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    display: none; /* Hide the menu on small screens by default */
+  }
+
+  .navbar.open {
+    display: flex; /* Show the menu when it has the "open" class */
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    margin-left: 0; /* Remove left margin for menu items on small screens */
+  }
+}
