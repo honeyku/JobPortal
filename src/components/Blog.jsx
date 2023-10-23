@@ -1,80 +1,145 @@
-import React from "react";
+import React, { useState } from "react";
+import Blog1 from "./Images/Blog/blog1.jpg";
+import Blog2 from "./Images/Blog/blog2.jpg";
+import Blog3 from "./Images/Blog/blog3.jpg";
+import BlogContent2 from "./DetailedBlog2";
+import BlogContent1 from "./DetailedBlog1";
+import BlogDetailed from "./DetailedBlog";
 
-function TrendingItem({ color, title, imageUrl, trendNumber }) {
+// import BlogContent2 from "./DetailedBlog2";
+// import BlogContent1 from "./DetailedBlog1";
+// import BlogContent from "./DetailedBlog";
+
+function Blog() {
+  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails1, setShowDetails1] = useState(false);
+  const [showDetails2, setShowDetails2] = useState(false);
+
+  const toggleDetails = () => {
+    setShowDetails(!showDetails);
+  };
+  const toggleDetails1 = () => {
+    setShowDetails1(!showDetails1);
+  };
+
+  const toggleDetails2 = () => {
+    setShowDetails2(!showDetails1);
+  };
+
+  const handleCloseDetails = () => {
+    setShowDetails(false);
+  };
+  const handleCloseDetails1 = () => {
+    setShowDetails1(false);
+  };
+
+  const handleCloseDetails2 = () => {
+    setShowDetails2(false);
+  };
+
   return (
-    <a
-      className={`relative overflow-hidden rounded-[24px] border p-6 transition-all hover:shadow-400 md:px-6 md:py-[42px]`}
-      href="/"
-    >
-      <p className="m-0 text-md text-[#8C8594]">TRENDING AT #{trendNumber}</p>
-      <h3 className="mb-0 mt-3 md:mt-8">{title}</h3>
-      <p
-        style={{ textShadow: "0px 0px 2px #000" }}
-        className="stroked bg-text absolute left-[24px] top-[40%] whitespace-nowrap text-[28px] font-bold text-transparent transition-all duration-500 md:left-[75px] md:top-[47%] md:text-[64px]"
-      >
-        {title}
-      </p>
-      <div className="absolute bottom-0 right-0 h-full max-h-[130px] w-[100px] object-contain md:max-h-[180px] md:w-[45%]">
-        <img alt={title} src={imageUrl} className="object-contain" />
+    <section className="reviews" id="blog">
+      <div className="reviews-slider">
+        <div className="wrapper">
+          <div className="box">
+            <img src={Blog1} alt="" />
+
+            <h2 style={{ marginTop: "30px" }}>
+              Top High Paying Jobs in India 2023 – The AIMHRS
+            </h2>
+            <p>
+              In a dynamic and evolving job market, the pursuit of high-paying
+              jobs has become a common aspiration. As 2023 unfolds, several
+              industries are witnessing significant growth, offering lucrative
+              opportunities for job seekers.
+            </p>
+            <button
+              onClick={toggleDetails} // Click handler to toggle details
+              style={{
+                backgroundColor: "rgb(12, 142, 22)",
+                height: "35px",
+                color: "whitesmoke",
+                width: "100px",
+                fontWeight: "bold",
+                borderRadius: "10px",
+              }}
+            >
+              Read More
+            </button>
+            {showDetails && (
+              <div className="detailed-content">
+                <BlogDetailed onClose={handleCloseDetails} />
+              </div>
+            )}
+          </div>
+
+          <div className="box">
+            <img src={Blog2} alt="" />
+            <h2 style={{ marginTop: "30px" }}>
+              Advantages of Being an Accountant and How AIMHRS Can Elevate Your
+              Career
+            </h2>
+            <p>
+              Choosing a career as an accountant offers a multitude of benefits,
+              ranging from financial stability to professional growth
+              opportunities.
+            </p>
+            <button
+              onClick={toggleDetails1}
+              style={{
+                backgroundColor: "rgb(12, 142, 22)",
+                height: "35px",
+                color: "whitesmoke",
+                width: "100px",
+                fontWeight: "bold",
+                borderRadius: "10px",
+                marginTop: "75px",
+              }}
+            >
+              Read More
+            </button>
+            {showDetails1 && (
+              <div className="detailed-content">
+                <BlogContent1 onClose={handleCloseDetails1} />
+              </div>
+            )}
+          </div>
+
+          <div className="box">
+            <img src={Blog3} alt="" />
+            <h2 style={{ marginTop: "30px" }}>
+              15 Best Jobs for Teenagers to Consider for the Future - With
+              Opportunities from AIMHRS
+            </h2>
+            <p>
+              As a teenager, you're at the cusp of exploring the world of work.
+              This is an exciting time to gain valuable experience, develop new
+              skills, and set the foundation for a promising future.
+            </p>
+            <button
+              onClick={toggleDetails2}
+              style={{
+                backgroundColor: "rgb(12, 142, 22)",
+                height: "35px",
+                color: "whitesmoke",
+                width: "100px",
+                fontWeight: "bold",
+                borderRadius: "10px",
+                marginTop: "20px",
+              }}
+            >
+              Read More
+            </button>
+            {showDetails2 && (
+              <div className="detailed-content">
+                <BlogContent2 onClose={handleCloseDetails2} />
+              </div>
+            )}
+          </div>
+        </div>
       </div>
-      <span className="mt-[64px] inline-block rounded-lg px-4 py-2 font-semibold transition-all md:mt-[100px]">
-        View all
-        <svg
-          className="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall"
-          focusable="false"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"></path>
-        </svg>
-      </span>
-    </a>
+    </section>
   );
 }
 
-function PopularSearches() {
-  return (
-    <div
-      id="popular-searches"
-      className="mx-auto flex max-w-screen-xl grid-cols-3 grid-rows-2 flex-col flex-wrap gap-4 px-4 py-[72px] md:grid md:py-[100px]"
-    >
-      <div className="mb-[48px] flex items-center md:mb-0">
-        <h4 className="text-center text-[32px] font-bold leading-[48px] md:text-left md:text-[56px] md:leading-[67px]">
-          Popular Searches on Apna
-        </h4>
-      </div>
-      <TrendingItem
-        color="#DE3700"
-        title="Jobs for Freshers"
-        imageUrl="/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmumbai_apnatime_prod%2Fapna-home%2Ffreshers-jobs.png&amp;w=3840&amp;q=50"
-        trendNumber={1}
-      />
-      <TrendingItem
-        color="#722ED1"
-        title="Work from home Jobs"
-        imageUrl="/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmumbai_apnatime_prod%2Fapna-home%2Fwork-from-home-jobs.png&amp;w=3840&amp;q=50"
-        trendNumber={2}
-      />
-      <TrendingItem
-        color="#CC0000"
-        title="Part time Jobs"
-        imageUrl="/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmumbai_apnatime_prod%2Fapna-home%2Fpart-time-jobs.png&amp;w=3840&amp;q=50"
-        trendNumber={3}
-      />
-      <TrendingItem
-        color="#1F8268"
-        title="Jobs for Women"
-        imageUrl="/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmumbai_apnatime_prod%2Fapna-home%2Fwomen-jobs.png&amp;w=3840&amp;q=50"
-        trendNumber={4}
-      />
-      <TrendingItem
-        color="#0074E8"
-        title="International Jobs"
-        imageUrl="/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fmumbai_apnatime_prod%2Fapna-home%2Finternational-jobs.png&amp;w=3840&amp;q=50"
-        trendNumber={5}
-      />
-    </div>
-  );
-}
-
-export default PopularSearches;
+export default Blog;

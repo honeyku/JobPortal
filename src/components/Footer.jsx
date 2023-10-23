@@ -69,38 +69,65 @@ function Footer() {
         <h2 style={{ color: "gray", marginBottom: "20px" }}>
           Follow us on social media
         </h2>
-        <a href="https://www.facebook.com/theaimhrs/" className="icon-facebook">
-          <img src={Facebook} alt="" />
-        </a>
-        <a href="https://twitter.com/aimhrs83580/" className="twitter">
-          <img src={Twitter} alt="" />
-        </a>
-        <a href="https://www.instagram.com/aimhrs/" className="instagram">
-          <img src={InstaGram} alt="" />
+        <a
+          href="https://www.facebook.com/theaimhrs/"
+          className="icon-facebook"
+          target="_blank" // Add this attribute
+          rel="noopener noreferrer" // Recommended for security
+        >
+          <img src={Facebook} alt="Facebook" />
         </a>
         <a
-          href="https://in.linkedin.com/company/the-aimhrs?trk=public_post_feed-actor-name"
-          className="linkedin"
+          href="https://twitter.com/aimhrs83580/"
+          className="twitter"
+          target="_blank" // Add this attribute
+          rel="noopener noreferrer" // Recommended for security
         >
-          <img src={Linkdin} alt="" />
+          <img src={Twitter} alt="Twitter" />
         </a>
-        <a href="https://in.pinterest.com/aimhrs/" className="pinterest">
-          <img src={Pinterest} alt="" />
+        <a
+          href="https://www.instagram.com/aimhrs/"
+          className="instagram"
+          target="_blank" // Add this attribute
+          rel="noopener noreferrer" // Recommended for security
+        >
+          <img src={InstaGram} alt="Instagram" />
         </a>
-        <a href="https://www.youtube.com/@aimhrsofficial/" className="youtube">
-          <img src={YouTube} alt="" />
+        <a
+          href="https://www.linkedin.com/company/the-aimhrs/"
+          className="linkedin"
+          target="_blank" // Add this attribute
+          rel="noopener noreferrer" // Recommended for security
+        >
+          <img src={Linkdin} alt="LinkedIn" />
+        </a>
+        <a
+          href="https://in.pinterest.com/aimhrs/"
+          className="pinterest"
+          target="_blank" // Add this attribute
+          rel="noopener noreferrer" // Recommended for security
+        >
+          <img src={Pinterest} alt="Pinterest" />
+        </a>
+        <a
+          href="https://www.youtube.com/@aimhrsofficial/"
+          className="youtube"
+          target="_blank" // Add this attribute
+          rel="noopener noreferrer" // Recommended for security
+        >
+          <img src={YouTube} alt="YouTube" />
         </a>
       </div>
       <div className="credit">
         {" "}
-        created by{" "}
+        created by 🧡{" "}
         <a
           href="https://allindiamarketinghrsolution.com"
           style={{ textDecoration: "none" }}
         >
           <span> All India Market Hr Solution</span>
         </a>{" "}
-        | all rights reserved!{" "}
+        | All rights reserved! Made In India{" "}
       </div>
     </section>
   );

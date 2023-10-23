@@ -18,3 +18,26 @@
 .company-slide img {
   max-width: 100%; /* Ensure images are responsive */
 }
+
+/* Base styles for company-container and company-slide */
+.company-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.company-slide {
+  margin: 10px;
+}
+
+.company-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .company-slide {
+    margin: 5px;
+  }
+}

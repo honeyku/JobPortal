@@ -72,10 +72,11 @@ function Header() {
           <i className="fas fa-bars"></i>
         </button>
         <nav className={`navbar ${isMenuOpen ? "open" : ""}`}>
-          <a href="#foothero">Jobs</a>
-          <a href="#foothero1">Database</a>
+          <a href="#joblist">Jobs</a>
+          <a href="#database">Database</a>
           <a href="#salesEnquiry">Sales Enquiry</a>
           <a href="#reviews">Reviews</a>
+          <a href="#blog">Blog</a>
         </nav>
       </div>
 

@@ -82,7 +82,7 @@ function JobListing1() {
   const nextPage = currentPage + 1;
 
   return (
-    <div className="container">
+    <div className="container" id="joblist">
       <div className="row mb-5 justify-content-center">
         <div className="col-md-7 text-center">
           <h2 className="section-title mb-2">
@@ -90,7 +90,6 @@ function JobListing1() {
           </h2>
         </div>
       </div>
-
       <div
         className="filter-section"
         style={{
@@ -143,7 +142,6 @@ function JobListing1() {
           <li
             key={index}
             className="job-listing d-block d-sm-flex pb-3 pb-sm-0 align-items-center"
-        
           >
             <div className="job-listing-position custom-width w-50 mb-3 mb-sm-0 ">
               <h2>

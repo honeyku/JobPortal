@@ -59,7 +59,7 @@ function SalesEnquiry() {
       <div className="contact-section">
         <h2 className="section-title">Sales Enquiry</h2>
         <form style={{ textAlign: "center" }} onSubmit={handleSubmit}>
-          <div style={{ display: "flex" }}>
+          <div className="inputt">
             <div className="input-group">
               <input
                 type="text"
@@ -70,7 +70,7 @@ function SalesEnquiry() {
                 onChange={handleChange}
               />
             </div>
-            <div className="input-group" style={{ marginLeft: "20px" }}>
+            <div className="input-group">
               <input
                 type="text"
                 name="last_name"
@@ -81,7 +81,7 @@ function SalesEnquiry() {
               />
             </div>
           </div>
-          <div style={{ display: "flex" }}>
+          <div className="inputt">
             <div className="input-group">
               <input
                 type="email"
@@ -92,7 +92,7 @@ function SalesEnquiry() {
                 onChange={handleChange}
               />
             </div>
-            <div className="input-group" style={{ marginLeft: "20px" }}>
+            <div className="input-group">
               <input
                 type="tel"
                 name="mobile"
@@ -104,7 +104,7 @@ function SalesEnquiry() {
               />
             </div>
           </div>
-          <div style={{ display: "flex" }}>
+          <div className="inputt">
             <div className="input-group">
               <input
                 type="text"
@@ -115,10 +115,7 @@ function SalesEnquiry() {
                 onChange={handleChange}
               />
             </div>
-            <div
-              className="input-group"
-              style={{ marginLeft: "20px", color: "black" }}
-            >
+            <div className="input-group" style={{ color: "black" }}>
               <select
                 className="select"
                 name="companySize"
@@ -161,12 +158,12 @@ function SalesEnquiry() {
             fontSize: "15px",
             fontWeight: "bold",
             color: "white",
-            display: "flex",
           }}
+          className="details"
         >
-          <p style={{ marginLeft: "40px" }}>5 Cr+ Candidates</p>
-          <p style={{ marginLeft: "80px" }}>70+ Cities</p>
-          <p style={{ marginLeft: "80px" }}>50 Lakh+ Jobs</p>
+          <p>1 Lack+ Candidates</p>
+          <p>70+ Cities</p>
+          <p>1 Lakh+ Jobs</p>
         </div>
       </div>
     </section>

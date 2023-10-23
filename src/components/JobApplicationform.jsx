@@ -6,7 +6,7 @@ const JobApplicationForm = ({ onClose }) => {
   const [EmpoyerDetails, setEmpoyerDetails] = useState({
     name: "",
     email: "",
-    mobileno: "",
+    mobile: "",
     qualification: "",
     resume: "",
     profile: "",
@@ -81,9 +81,9 @@ const JobApplicationForm = ({ onClose }) => {
         <label>Mobile No:</label>
         <input
           type="text"
-          name="mobileno"
+          name="mobile"
           onChange={handleChange}
-          value={EmpoyerDetails.mobileno}
+          value={EmpoyerDetails.mobile}
         />
 
         <label>Qualification:</label>

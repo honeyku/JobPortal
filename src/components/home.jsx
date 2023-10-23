@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import EmployerLoginForm from "./Loginpage/EmployeeLogin";
 import JobSeekerLoginForm from "./Loginpage/JobSekarLogin";
 import { useAuth } from "./Authentication/AuthContext";
+import Logo from "./Images/frontLogo1.jpg";
 import "../App.css";
 // import JobListing from "./JobListing";
 import JobListing1 from "./Joblisting1";
@@ -38,17 +39,28 @@ function Home() {
           <h3 style={{ fontSize: "6rem" }}>
             Find the right candidate And right Job Fast.
           </h3>
-          <p>Trusted by 5 Cr+ Candidates | 4 Lakh+ Employers</p>
+          <p>Trusted by l Lack+ Candidates | 20 Thousand+ Employers</p>
         </div>
         {user || employer ? (
           // <JobListing1 />
-          ""
+          <>
+            {" "}
+            <div className="swiper image-slider">
+              <div id="card">
+                <div id="card-content">
+                  <h1 style={{ color: "#287c7b" }}>Welcome To AIMHRS</h1>
+                  <img src={Logo} alt="" />
+                </div>
+              </div>
+            </div>
+          </>
         ) : (
+          // ""
           <>
             <div className="swiper image-slider">
               <div id="card">
                 <div id="card-content">
-                  <div>
+                  <div style={{ display: "flex" }}>
                     <button
                       onClick={showEmployerLoginForm}
                       style={{
@@ -82,13 +94,15 @@ function Home() {
                       Job Seeker Login
                     </button>
                   </div>
+
                   {isEmployerLoginFormVisible && (
-                    <div>
+                    <div style={{ marginTop: "5px" }}>
                       <EmployerLoginForm />
                     </div>
                   )}
+
                   {isJobSeekerLoginFormVisible && (
-                    <div>
+                    <div style={{ marginTop: "5px" }}>
                       <JobSeekerLoginForm />
                     </div>
                   )}

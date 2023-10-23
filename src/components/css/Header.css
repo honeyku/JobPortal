@@ -19,17 +19,16 @@
 
 /* Styles for the menu icon */
 .menu-icon {
-  display: none; /* Hide the menu icon by default on larger screens */
+  display: none;
   cursor: pointer;
   font-size: 24px;
-  margin-right: 20px;
 }
 
 /* Styles for the navigation menu */
 .navbar {
   display: flex;
-  width: 100%; /* Make the navigation bar span the full width */
-  justify-content: flex-end; /* Align menu items to the right */
+  width: 100%;
+  justify-content: flex-end;
 }
 
 .navbar a {
@@ -43,26 +42,26 @@
 /* Styles for the responsive menu on small screens */
 @media (max-width: 768px) {
   .menu-icon {
-    display: block; /* Show the menu icon on small screens */
+    display: block;
   }
 
   .navbar {
     flex-direction: column;
     position: absolute;
-    top: 70px; /* Adjust the top position as needed */
+    top: 70px;
     left: 0;
     background-color: #ffffff;
     width: 100%;
     border-top: 1px solid #ccc;
-    display: none; /* Hide the menu on small screens by default */
+    display: none;
   }
 
   .navbar.open {
-    display: flex; /* Show the menu when it has the "open" class */
+    display: flex;
   }
 
   .navbar a {
     margin: 10px 0;
-    margin-left: 0; /* Remove left margin for menu items on small screens */
+    margin-left: 0;
   }
 }

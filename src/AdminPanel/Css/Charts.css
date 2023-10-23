@@ -1,0 +1,53 @@
+/* Charts.css */
+#layoutSidenav_content {
+  margin-top: 70px; /* Add your desired top margin */
+}
+
+.chart-title {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.breadcrumb {
+  margin-top: 10px;
+}
+
+.card {
+  margin-top: 10px;
+}
+
+.card-body {
+  font-size: 16px;
+}
+
+.card-footer {
+  font-size: 14px;
+}
+
+.chart-header {
+  display: flex;
+  align-items: center;
+}
+
+.chart-title-icon {
+  margin-right: 10px;
+}
+
+.chart-container {
+  margin-top: 10px;
+}
+
+.chart-canvas {
+  width: 100%;
+}
+
+.footer {
+  padding: 15px;
+  background-color: #f8f9fc;
+  margin-top: auto;
+  text-align: center;
+}
+
+.footer-links {
+  margin-top: 5px;
+}

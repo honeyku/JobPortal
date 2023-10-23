@@ -1,0 +1,133 @@
+/* Main.css */
+.container {
+  padding: 25px;
+  background: #f8f9fc;
+}
+
+.page-title {
+  font-size: 28px;
+  color: #5a5c69;
+  line-height: 34px;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.generate-report-button {
+  background: #2e59d9;
+  height: 32px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 25px;
+  padding-bottom: 15px;
+}
+
+.card {
+  height: 100px;
+  border-radius: 8px;
+  border-left: 4px solid #4e73df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  cursor: pointer;
+  transition: transform 300ms ease-in, box-shadow 300ms ease-in;
+}
+
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+  transform: scale(1.03);
+}
+
+.card-content {
+  color: #b589df;
+  font-size: 11px;
+  line-height: 17px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.card-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.card-icon {
+  display: flex;
+  align-items: center;
+}
+
+.card-warning {
+  background: #ffa500;
+}
+
+.card-success {
+  background: #03ac13;
+}
+
+.card-danger {
+  background: #dc3545;
+}
+
+.card-title {
+  color: #fff;
+}
+
+.chart-card {
+  width: 50%;
+  border: 1px solid #ededed;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chart-card-header {
+  background: #f8f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ededed;
+}
+
+.chart-card-title {
+  font-size: 20px;
+}
+
+.chart-card-icon {
+  cursor: pointer;
+}
+
+.chart-container {
+  padding-left: 35px;
+}
+
+.chart-canvas {
+  width: 100%;
+}
+
+.chart-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+}
+
+.chart-link {
+  color: gray;
+  cursor: pointer;
+}

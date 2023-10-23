@@ -1,0 +1,98 @@
+/* DashBoardView.css */
+.bg-dashboard {
+  background-color: #212529;
+  flex: 1;
+  height: 70px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.search-input {
+  background-color: #f8f9fc;
+  height: 40px;
+  outline: none;
+  padding-left: 13px;
+  width: 350px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #000;
+}
+
+.search-button {
+  background-color: #4e73df;
+  height: 40px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.bell-envelope-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+  color: #fff;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+
+.profile-info p {
+  color: #fff;
+}
+
+.profile-image-container {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #4e73df;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.profile-image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.dropdown {
+  background-color: #fff;
+  border: 1px solid #000;
+  height: 120px;
+  width: 150px;
+  position: absolute;
+  bottom: -135px;
+  right: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.dropdown p {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dropdown p:hover {
+  color: blue;
+}

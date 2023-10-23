@@ -1,4 +1,5 @@
 import React from "react";
+import "./css/HireCompany.css";
 
 function Consultation() {
   return (
@@ -102,16 +103,10 @@ function Consultation() {
           />
         </a>
         <a href="#" class="company-slide">
-          <img
-            src="https://brandgenetics.com/wp-content/uploads/2019/11/panasonic-logo-scaled.jpg"
-            alt=""
-          />
+          <img src="https://instaciti.com/assets/img/logo.png" alt="" />
         </a>
         <a href="#" class="company-slide">
-          <img
-            src="https://www.zscaler.com/sites/default/files/images/page/company/media-center/media-kit/Zscaler-logo.svg"
-            alt=""
-          />
+          <img src="https://www.slkbima.com/images/logo.png" alt="" />
         </a>
       </div>
     </section>
