@@ -56,7 +56,6 @@ function JobSeekerLoginForm() {
         setUserData(userData);
         setUsername(username);
         login({ username, email: useremail });
-        console.log(username);
       } else {
         setIsSuccess(false);
         setMessage("Login failed. Please check your credentials.");

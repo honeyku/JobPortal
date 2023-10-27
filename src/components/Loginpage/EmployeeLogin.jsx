@@ -41,8 +41,8 @@ function EmployerLoginForm() {
         setUserData(userData);
         setUsername(username);
         login({ username, email: useremail });
-        console.log(username);
-        console.log(useremail, "email");
+        // console.log(username);
+        // console.log(useremail, "email");
       } else {
         setIsSuccess(false);
         setMessage("Login failed. Please check your credentials.");

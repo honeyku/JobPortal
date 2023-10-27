@@ -31,7 +31,7 @@ function Home() {
     setJobSeekerLoginFormVisible(true);
   };
 
-  console.log(employer, "emp");
+  // console.log(employer, "emp");
   return (
     <section className="home" id="home">
       <div className="row">

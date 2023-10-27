@@ -10,7 +10,7 @@ export const AuthProvider = ({ children }) => {
   const login = (userData) => {
     setUser(userData);
   };
-  console.log(user, "user");
+  // console.log(user, "user");
 
   const signup = (username) => {
     setUser(username);

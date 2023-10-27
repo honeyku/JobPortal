@@ -35,7 +35,7 @@ function JobSeekerSignUpForm() {
         email,
         password,
       });
-      console.log(response.data);
+      // console.log(response.data);
       if (response.status === 201) {
         const userData = response.data;
         const username = userData.user.username;

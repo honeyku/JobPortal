@@ -88,8 +88,8 @@ function App() {
   };
 
   const { user } = useAuth();
-  console.log("User:", user); // Check the user object
-  console.log("User Email:", user?.email); // Check the user's email
+  // console.log("User:", user); // Check the user object
+  // console.log("User Email:", user?.email); // Check the user's email
 
   // const shouldRenderAdminPanel =
   //   user &&
@@ -125,7 +125,7 @@ function App() {
           <meta name="ROBOTS" content="index, follow" />
           <link
             rel="shortcut icon"
-            href="images/imhrs.png"
+            href="./components/Images/AIMHS.png"
             type="image/x-icon"
           />
           <meta name="ROBOTS" content="ALL" />

@@ -16,27 +16,20 @@ import "../Css/SideBar.css";
 
 const Sidebar = () => {
   return (
-    <div className="sidebar">
+    <div className="sidebar" style={{ width: "13%" }}>
       <div className="sidebar-header">
-        <h1 className="sidebar-title">MrEngineer</h1>
+        <h1 className="sidebar-title">AIMHRS</h1>
       </div>
       <div className="sidebar-section">
-        <p className="sidebar-text">CORE</p>
         <div className="sidebar-subsection">
           <FaTachometerAlt className="sidebar-icon" />
           <p className="sidebar-text">Dashboard</p>
         </div>
       </div>
       <div className="sidebar-section">
-        <p className="sidebar-text">INTERFACE</p>
         <div className="sidebar-subsection">
-          <div className="sidebar-subsection-link">
-            <div className="sidebar-subsection">
-              <FaListAlt className="sidebar-icon" />
-              <p className="sidebar-text">Layouts</p>
-            </div>
-            <FaChevronRight className="sidebar-chevron" />
-          </div>
+          <FaTachometerAlt className="sidebar-icon" />
+          <p className="sidebar-text">Resume</p>
         </div>
         <div className="sidebar-subsection">
           <div className="sidebar-subsection-link">

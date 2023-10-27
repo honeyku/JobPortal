@@ -13,7 +13,7 @@ function Header() {
   const toggleForm = () => {
     setIsFormOpen(!isFormOpen);
   };
-  console.log(employer, "emp");
+  // console.log(employer, "emp");
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {

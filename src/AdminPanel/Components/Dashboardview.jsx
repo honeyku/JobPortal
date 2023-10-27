@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaEnvelope, FaRegBell, FaSearch } from "react-icons/fa";
 import profile from "../../components/Images/ReviewsImage/honey.jpeg";
 import "../Css/DashBoardView.css";
+import Sidebar from "./Sidebar";
 
 const Dashboardview = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +12,7 @@ const Dashboardview = () => {
   };
 
   return (
-    <div className=" bg-dashboard ">
+    <div className=" bg-dashboard " style={{ display: "flex" }}>
       <div className="input-container">
         <input
           tupe="text"
@@ -22,7 +23,11 @@ const Dashboardview = () => {
           <FaSearch color="white" />
         </div>
       </div>
-      <div className="bell-envelope-container" onClick={showDropDown}>
+      <div
+        className="bell-envelope-container"
+        onClick={showDropDown}
+        style={{ marginLeft: "auto" }}
+      >
         <div className="bell-envelope-container">
           <FaRegBell />
           <FaEnvelope />
@@ -33,7 +38,7 @@ const Dashboardview = () => {
             <img src={profile} alt="Image" className="profile-image" />
           </div>
           {open && (
-            <div className="dropdown">
+            <div className="dropdown" style={{ backgroundColor: "black" }}>
               <p className="cursor-pointer hover:text-blue font-semibold">
                 Profile
               </p>
@@ -47,6 +52,7 @@ const Dashboardview = () => {
           )}
         </div>
       </div>
+      {/* <Sidebar /> */}
     </div>
   );
 };

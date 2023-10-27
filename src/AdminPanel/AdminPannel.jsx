@@ -187,7 +187,7 @@ function YourComponent() {
                   styl
                 >
                   <a
-                    href={`http://localhost:8001/api/download/${job.resumePath}`} // Replace with the correct URL
+                    href={`http://localhost:8001/api/download/${job.resumePath}`}
                     target="_blank"
                     download
                     rel="noopener noreferrer"
@@ -241,7 +241,7 @@ function YourComponent() {
           </ul>
         </nav>
       </div>
-      <div style={{ padding: "20px" }}>
+      {/* <div style={{ padding: "20px" }}>
         <h1>Sales Enquiries</h1>
         <ul>
           {sales.map((sale) => (
@@ -261,8 +261,8 @@ function YourComponent() {
             </li>
           ))}
         </ul>
-      </div>
-
+      </div> */}
+      {/* 
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <div class="user-profile">
           <div class="user-image">
@@ -379,7 +379,7 @@ function YourComponent() {
             </div>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       {/* <div>
         <div class="row mt-3">
           <div class="col-xl-3 flex-column d-flex grid-margin stretch-card">
@@ -438,16 +438,22 @@ function YourComponent() {
         </div>
       </div> */}
       <div className="flex">
-        <div className="basis-[12%] h-[100vh]">
-          <Sidebar />
-        </div>
-        <div className="basis-[88%] border h-[100vh] overflow-scroll">
+        {/* <div style={{ width: "12%", height: "100vh" }}></div> */}
+        <div
+          style={{
+            // flex: 1,
+            border: "1px solid #000",
+            height: "120vh",
+            // overflow: "scroll",
+          }}
+        >
           <Dashboardview />
-          <div>
+          <Sidebar />
+          {/* <div>
             <Outlet>
               <Tables />
             </Outlet>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
